@@ -1,11 +1,14 @@
-const path = require('path'); 
-require('dotenv').config({ path: path.join(__dirname, '.env') });
 
- //require('dotenv').config();
+
 
  const express = require('express');
  const mongoose = require('mongoose');
  const port = '3333';
+
+const path = require('path'); 
+require('dotenv').config();
+//require('dotenv').config({ path: path.join(__dirname, '.env') });
+console.log( path.join(__dirname, '.env'));
  //const password = require('../password.js') ;
  const routes = require('./routes');
  const cors = require('cors');
