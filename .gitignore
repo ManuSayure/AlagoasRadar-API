@@ -9,3 +9,5 @@ tmp/uploads/*
 !tmp/uploads/ .gitkeep
 
 ecosystem.config.js
+
+teste.pem
