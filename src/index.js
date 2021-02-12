@@ -1,6 +1,4 @@
 
-
-
  const express = require('express');
  const mongoose = require('mongoose');
  const port = '3333';
@@ -23,7 +21,7 @@ console.log( path.join(__dirname, '.env'));
 
  //'mongodb+srv://admin:'+password+'@cluster0.vbba4.mongodb.net/db?retryWrites=true&w=majority'
  //Mongo DB Atlas
- mongoose.connect( process.env.Mongo_URL, {   
+ mongoose.connect( process.env.MONGO_URL, {   
         useUnifiedTopology: true,
         useNewUrlParser: true,
         useCreateIndex: true,

@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon src/index.js",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "deploy" : "pm2-runtime start ecosystem.config.js --env production"
   },
   "dependencies": {
     "aws-sdk": "^2.828.0",
@@ -22,6 +23,7 @@
     "morgan": "^1.10.0",
     "multer": "^1.4.2",
     "multer-s3": "^2.9.0",
+    "pm2": "^4.5.4",
     "socket.io": "^3.0.5"
   },
   "devDependencies": {
